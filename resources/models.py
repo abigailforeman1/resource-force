@@ -15,15 +15,8 @@ class Resource(models.Model):
     image = models.CharField(max_length=500, blank=True)
     link = models.CharField(max_length=500, blank=True)
     description = models.CharField(max_length=3000)
-    owner = models.ForeignKey(
-        User,
-        related_name='resources',
-        on_delete=models.CASCADE
-    )
-    categories = models.ManyToManyField(
-        'categories.Category',
-        related_name='resources'
-    )
+    owner = models.ForeignKey(User, related_name='resources', on_delete=models.CASCADE) # foreign key on resources that points to owner (one to many)
+    categories = models.ManyToManyField('categories.Category', related_name='resources') # creating the many to many relationship that links resources and categories 
 
     def __str__(self):
         return f'{self.title}'

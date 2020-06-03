@@ -21,7 +21,7 @@ class UserSerializer(serializers.ModelSerializer):
         password_confirmation = data.pop('password_confirmation')
         if password != password_confirmation:
             raise ValidationError({'password_confirmation': 'does not match'})
-        data['password'] = make_password(password)
+        data['password'] = make_password(password) # this is hashing the users password 
         return data
 
     class Meta:

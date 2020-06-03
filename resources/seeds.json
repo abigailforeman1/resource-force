@@ -1,0 +1,36 @@
+[
+{
+  "model": "resources.resource",
+  "pk": 1,
+  "fields": {
+    "title": "Why I'm No Longer Talking To White People About Race",
+    "original_author": "Reni Eddo-Lodge",
+    "origin": "UK",
+    "year_of_creation": 2017,
+    "image": "https://cdn.shopify.com/s/files/1/0244/8444/6286/products/9781408870587_2000x.jpg?v=1573474192",
+    "link": "https://www.waterstones.com/book/why-im-no-longer-talking-to-white-people-about-race/reni-eddo-lodge/9781408870587",
+    "description": "A charged and necessary wake-up call to pervasive, institutionalised racism, Eddo-Lodge\u2019s searing polemic reconstitutes the frame of the argument around race, removing it from the hands of those with little experience of its resonances. From ambient and lazy cultural stereotyping to open hostility, Why I\u2019m No Longer Talking to White People About Race is a clarion call of understanding.",
+    "owner": 1,
+    "categories": [
+      3
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 2,
+  "fields": {
+    "title": "Protest : Justice For George Floyd",
+    "original_author": "Justiceforgeorgelondon",
+    "origin": "London",
+    "year_of_creation": 2020,
+    "image": "https://p16-va-default.akamaized.net/img/musically-maliva-obj/c46c6c334afce43fe6bbc5c8bd9e244e~c5_1080x1080.jpeg",
+    "link": "https://www.facebook.com/events/715662102533893/?acontext=%7B%22event_action_history%22%3A[%7B%22mechanism%22%3A%22search_results%22%2C%22surface%22%3A%22search%22%7D]%7D",
+    "description": "Peaceful march in London, to show solidarity, demand justice for George Floyd, and the many other lives lost because of police brutality \u270a\ud83c\udffd\u270a\ud83c\udffe\u270a\ud83c\udfff more info coming ASAP. PLS SHARE AND ADD UP INSTA & TWITTER",
+    "owner": 1,
+    "categories": [
+      5
+    ]
+  }
+}
+]
