@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'jwt_auth',
     'categories',
     'comments',
+    'likes',
     'resources',
 ]
 

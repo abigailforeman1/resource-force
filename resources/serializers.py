@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model
 
 from categories.serializers import CategorySerializer 
 from comments.serializers import PopulatedCommentSerializer
+from likes.serializers import LikeSerializer
 from .models import Resource
 User = get_user_model()
 
@@ -26,3 +27,4 @@ class PopulatedResourceSerializer(ResourceSerializer):
     owner = UserSerializer()
     categories = CategorySerializer(many=True)
     comments = PopulatedCommentSerializer(many=True)
+    likes = LikeSerializer(many=True)
