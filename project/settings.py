@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'resources'
+    'jwt_auth',
+    'comments',
+    'resources',
+    'categories'
 ]
 
 MIDDLEWARE = [
@@ -117,6 +120,18 @@ USE_L10N = True
 
 USE_TZ = True
 
+REST_FRAMEWORK = {  # added this to get rest framework to use our custom authentication classes
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'jwt_auth.authentication.JWTAuthentication'
+    ],
+}
+
+# regsitering our custom user model as the auth model
+AUTH_USER_MODEL = 'jwt_auth.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
