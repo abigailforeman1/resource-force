@@ -43,9 +43,11 @@ INSTALLED_APPS = [
     'comments',
     'likes',
     'resources',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -60,7 +62,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'frontend')], #Look, we have added the root folder of frontend here
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,7 +136,12 @@ REST_FRAMEWORK = {  # added this to get rest framework to use our custom authent
 # regsitering our custom user model as the auth model
 AUTH_USER_MODEL = 'jwt_auth.User'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'frontend', "build", "static"), 
+)
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+CORS_ORIGIN_ALLOW_ALL = True

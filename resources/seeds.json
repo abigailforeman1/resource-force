@@ -32,5 +32,39 @@
       5
     ]
   }
+},
+{
+  "model": "resources.resource",
+  "pk": 3,
+  "fields": {
+    "title": "Official George Floyd Memorial Fund",
+    "original_author": "Philonise Floyd",
+    "origin": "Minneapolis",
+    "year_of_creation": 2020,
+    "image": "https://d2g8igdw686xgo.cloudfront.net/48345040_1590602439903874_r.jpeg",
+    "link": "https://www.gofundme.com/f/georgefloyd",
+    "description": "This fund is established to cover funeral and burial expenses, mental and grief counseling, lodging and travel for all court proceedings, and to assist our family in the days to come as we continue to seek justice for George.  A portion of these funds will also go to the Estate of George Floyd for the benefit and care of his children and their educational fund.",
+    "owner": 1,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "resources.resource",
+  "pk": 4,
+  "fields": {
+    "title": "Save the Tears: White Woman's Guide",
+    "original_author": "Tatiana Mac",
+    "origin": "US",
+    "year_of_creation": 2020,
+    "image": "https://miro.medium.com/max/3150/1*yb_c-sZ4XweK-z1Pezg4yQ.jpeg",
+    "link": "https://tatianamac.com/posts/save-the-tears/",
+    "description": "Black and brown people are protesting for their survival, and you're a white woman who isn't sure how to help. What now? I've written you a guide.",
+    "owner": 2,
+    "categories": [
+      6
+    ]
+  }
 }
 ]
