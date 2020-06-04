@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from 'axios'
+import { register } from '../../lib/api'
 
 class Register extends React.Component {
   state = {
@@ -22,7 +22,8 @@ class Register extends React.Component {
   handleSubmit = async e => {
     e.preventDefault()
     try {
-      await axios.post('api/register', this.state.data)
+      // await axios.post('api/register', this.state.data)
+      await register(this.state.data)
       this.props.history.push('/login')
     } catch (err) {
       this.setState({

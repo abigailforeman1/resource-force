@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from 'axios'
+import { login } from '../../lib/api'
 
 import Auth from '../../lib/auth'
 
@@ -20,7 +20,7 @@ class Login extends React.Component {
   handleSubmit = async e => {
     e.preventDefault()
     try {
-      const res = await axios.post('api/login', this.state.data)
+      const res = await login(this.state.data)
       Auth.setToken(res.data.token)
       this.props.history.push('/')
     } catch (err) {
